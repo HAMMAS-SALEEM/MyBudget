@@ -1,7 +1,5 @@
-<h1>Categories#index</h1>
-<p>Find me in app/views/categories/index.html.erb</p>
 <%= link_to "Create Category", new_category_path %><br>
 <% @categories.includes(:transactions).each do |cate| %>
-  <%= link_to cate.name, new_category_transaction_path(category_id: cate.id) %>
+  <%= link_to cate.name, category_transactions_path(category_id: cate.id) %>
   <span><%= cate.total_transactions_amount %></span><br>
 <% end %>

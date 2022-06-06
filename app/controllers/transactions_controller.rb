@@ -11,7 +11,7 @@ class TransactionsController < ApplicationController
   def create
     @category = Category.find(params[:category_id])
     @transaction = @category.transactions.new(name: trans_params[:name],
-    amount: trans_params[:amount], user_id: current_user.id)
+                                              amount: trans_params[:amount], user_id: current_user.id)
     if @transaction.save
       flash[:notice] = 'Transaction is completed'
       redirect_to category_transactions_path(@category)

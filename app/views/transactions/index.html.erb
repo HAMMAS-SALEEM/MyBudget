@@ -1,6 +1,4 @@
-<h1>Transactions#index</h1>
-<p>Find me in app/views/transactions/index.html.erb</p>
-
+<%= link_to "Create Transaction", new_category_transaction_path(@category) %><br>
 <% @category.transactions.each do |transaction| %>
   <span><%= transaction.name %></span>
   <span><%= transaction.amount %></span><br>
