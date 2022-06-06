@@ -37,3 +37,45 @@ body {
 .splash_reg_btn {
   color: rgb(146, 146, 146);
 }
+
+.navbar {
+  background: rgb(53,117,189);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  height: 35px;
+}
+
+.nav_heading {
+  color: white;
+}
+
+#user_email, #user_password {
+  width: 100%;
+  height: 50px;
+  text-indent: 10px;
+  font-size: 15px;
+  border: none;
+  border: 1px solid rgba(0, 0, 0, 0.212);
+  outline: none;
+}
+
+#user_password {
+  border-top: none;
+}
+
+.empty {
+  visibility: hidden;
+}
+
+.login_btn {
+  position: absolute;
+  top: 9px;
+  right: 9px;
+  background: none;
+  color: white;
+  border: none;
+  font-size: 14px;
+  font-weight: bold;
+}
