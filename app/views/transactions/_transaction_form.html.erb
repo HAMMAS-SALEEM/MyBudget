@@ -1,0 +1,11 @@
+<%= form_for :transaction, url: category_transactions_path(@category), method: :post do |form|  %>
+  <div class='form_field'>
+    <%= form.label :name %>
+    <%= form.text_field :name, class: 'transaction_name_field' %>
+  </div>
+  <div class='form_field'>
+    <%= form.label :amount %>
+    <%= form.text_field :amount, class: 'transaction_amount_field' %>
+  </div>
+  <%= form.submit "Submit" %>
+<% end %>
