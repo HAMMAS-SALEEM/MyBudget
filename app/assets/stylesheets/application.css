@@ -3,3 +3,37 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  background: rgb(241,243,242)
+}
+
+.splash_screen_heading {
+  text-align: center;
+  margin: 100px 0 300px 0;
+  color: rgb(74,83,88);
+}
+
+.splash_page_btns {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.splash_btn {
+  padding: 10px 80px;
+  width: 300px;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.splash_login_btn {
+  background-color: rgb(57,121,195);
+  color: white;
+}
+
+.splash_reg_btn {
+  color: rgb(146, 146, 146);
+}
