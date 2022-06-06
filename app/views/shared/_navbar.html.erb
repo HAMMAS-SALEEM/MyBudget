@@ -4,6 +4,6 @@
   <%if user_signed_in?%>
     <%= link_to "Sign out", destroy_user_session_path %>
   <% else %>
-    <%= link_to "Login", login_path, class: "empty"  %>
+    <%= link_to "", class: "empty"  %>
   <% end %>
 </nav>
