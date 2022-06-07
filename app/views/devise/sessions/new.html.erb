@@ -1,0 +1,18 @@
+<%= render partial: 'shared/navbar', locals: { heading: 'LOGIN', back_path: unauthenticated_root_path } %>
+<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+    <div class="field">
+      <%= f.email_field :email, autofocus: true, autocomplete: "email", class: 'form-control', placeholder: 'Email' %>
+    </div>
+  
+    <div class="field">
+      <%= f.password_field :password, autocomplete: "current-password", class: 'form-control', placeholder: 'Password'%>
+    </div>
+  
+    <div class="actions">
+      <%= f.submit "Log in", class: 'login_btn' %>
+    </div>
+  </div>
+<% end %>
+<div class="login_page_links">
+  <%= render "devise/shared/links" %>
+</div>
