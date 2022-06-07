@@ -5,7 +5,6 @@ class Category < ApplicationRecord
   has_one_attached :image
 
   validates :name, presence: true, length: { maximum: 250 }
-  validates :image, presence: true
 
   def total_transactions_amount
     total = 0
