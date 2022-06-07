@@ -4,11 +4,11 @@
   <li class="categories_container_padding">
     <ul class="categories_container">
       <li class="category_img">
-        <img src=<%= cate.icon %> alt='category icon'>
+        <img src=<%= cate.icon %> alt='category icon' class="category_img">
       </li>
       <li class="category-detail-container">
         <span><%= link_to cate.name, category_transactions_path(category_id: cate.id) %></span>
-        <span><%= cate.created_at.strftime("%d %m %Y") %></span>
+        <span><%= cate.created_at.strftime("%d-%m-%Y") %></span>
       </li>
       <li class="category_amount_container">
         <span>$<%= cate.total_transactions_amount %></span>
