@@ -9,7 +9,7 @@ class CategoriesController < ApplicationController
   end
 
   def create
-    @category = current_user.categories.new(name: cate_params[:name], icon: cate_params[:icon])
+    @category = current_user.categories.new(cate_params)
     if @category.save
       flash[:notice] = 'Category has been created'
       redirect_to categories_path
@@ -21,6 +21,6 @@ class CategoriesController < ApplicationController
   private
 
   def cate_params
-    params.require(:category).permit(:name, :icon)
+    params.require(:category).permit(:name, :image)
   end
 end

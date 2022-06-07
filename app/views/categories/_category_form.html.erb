@@ -3,7 +3,7 @@
 <%= form_for :category, url: categories_path, method: :post do |form|  %>
   <div class='category_form'>
     <%= form.text_field :name, class: 'category_form_field category_name_field', placeholder: 'Category Name' %>
-    <%= form.text_field :icon, class: 'category_form_field category_icon_field', placeholder: 'Category Icon' %>
+    <%= form.file_field :image %>
     <%= form.submit "Submit", class: 'category_form_field category_form_btn' %>
   </div>
 <% end %>
