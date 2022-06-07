@@ -1,10 +1,10 @@
 <%= render partial: 'shared/navbar', locals: { heading: 'CATEGORIES', back_path: categories_path } %>
-<ul>
+<ul class="categories_directory">
 <% @categories.includes(:transactions).each do |cate| %>
   <li class="categories_container_padding">
     <ul class="categories_container">
       <li class="category_img">
-        <img src=<%= cate.icon %> alt='category icon' class="category_img">
+        <%= image_tag(cate.image, class:"category_img") if cate.image.attached? %>
       </li>
       <li class="category-detail-container">
         <span><%= link_to cate.name, category_transactions_path(category_id: cate.id) %></span>
