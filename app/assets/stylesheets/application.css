@@ -12,6 +12,10 @@ li {
   list-style: none;
 }
 
+.back-btn {
+  width: 50px;
+}
+
 .splash_screen_heading {
   text-align: center;
   margin: 100px 0 300px 0;
@@ -122,14 +126,20 @@ li {
   font-size: 10px;
 }
 
+.categories_container_padding {
+  padding: 10px;
+}
+
 .categories_container {
   justify-content: space-between;
   margin-top: 12px;
   padding: 20px;
+  background: white;
 }
 
 .categories_container,
-.category-detail-container {
+.category-detail-container,
+.category_form {
   display: flex;
 }
 
@@ -154,4 +164,22 @@ li {
   width: 100%;
   text-align: center;
   padding: 10px 0;
+}
+
+.category_form {
+  flex-direction: column;
+  padding: 20px;
+}
+
+.category_form_field {
+  height: 30px;
+  margin-bottom: 12px;
+  text-indent: 5px;
+}
+
+.category_form_btn {
+  background-color: rgb(46, 101, 182);
+  border: none;
+  color: white;
+  border-radius: 3px;
 }

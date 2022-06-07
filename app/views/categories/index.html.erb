@@ -1,7 +1,7 @@
 <%= render partial: 'shared/navbar', locals: { heading: 'CATEGORIES', back_path: categories_path } %>
 <ul>
 <% @categories.includes(:transactions).each do |cate| %>
-  <li>
+  <li class="categories_container_padding">
     <ul class="categories_container">
       <li class="category_img">
         <img src=<%= cate.icon %> alt='category icon'>
