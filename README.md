@@ -5,7 +5,11 @@
 
 ## Link Demo
 
-[Cick here to get live demo](https://desolate-ravine-89163.herokuapp.com/)
+[Cick here to get live demo](https://quiet-sierra-22121.herokuapp.com/)
+
+## Video Demo
+
+https://www.loom.com/share/ff67444d12504eeb81846f435e7b58e2
 
 ## Built With
 
