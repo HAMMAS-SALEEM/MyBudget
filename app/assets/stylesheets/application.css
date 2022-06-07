@@ -126,6 +126,10 @@ li {
   font-size: 10px;
 }
 
+.categories_directory, .transactions-container-padding {
+  margin-bottom: 50px;
+}
+
 .categories_container_padding,
 .transactions-container-padding {
   padding: 10px;
@@ -158,12 +162,16 @@ li {
   height: 100px;
 }
 
+#category_image {
+  margin-bottom: 20px;
+}
+
 .create_category_btn,
 .transaction-create-btn {
   background-color: rgb(100, 182, 37);
   color: white;
   text-decoration: none;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   width: 100%;
   text-align: center;

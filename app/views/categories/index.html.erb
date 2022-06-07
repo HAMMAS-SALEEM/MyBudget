@@ -1,5 +1,5 @@
 <%= render partial: 'shared/navbar', locals: { heading: 'CATEGORIES', back_path: categories_path } %>
-<ul>
+<ul class="categories_directory">
 <% @categories.includes(:transactions).each do |cate| %>
   <li class="categories_container_padding">
     <ul class="categories_container">
