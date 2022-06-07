@@ -2,11 +2,11 @@ require 'rails_helper'
 
 RSpec.describe 'splash', type: :feature do
   before(:each) do
-    @user = User.new(name: 'Hammas', email: 'hammas@gmail.com', password: 'hammas' )
+    @user = User.new(name: 'Hammas', email: 'hammas@gmail.com', password: 'hammas')
     @user.confirm
     @category = Category.create(name: 'Office Payments', icon: '123.png', user: @user)
     @transaction = Transaction.create(name: 'Over Time', amount: 200, category: @category,
-    user: @user)
+                                      user: @user)
     visit new_user_session_path
     fill_in 'Email', with: 'hammas@gmail.com'
     fill_in 'Password', with: 'hammas'

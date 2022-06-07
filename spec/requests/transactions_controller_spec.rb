@@ -7,7 +7,7 @@ RSpec.describe Transaction, type: :request do
     sign_in @user
     @category = Category.create(name: 'Office Payments', icon: '123.png', user_id: @user.id)
     @transaction = Transaction.create(name: 'Overtime Payment', amount: 200,
-    category_id: @category_id, user_id: @user.id)
+                                      category_id: @category_id, user_id: @user.id)
     get category_transactions_path(@category)
   end
   describe 'Testing the index method of Transaction controller' do
