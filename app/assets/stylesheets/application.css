@@ -8,6 +8,10 @@ body {
   background: rgb(241, 243, 242);
 }
 
+li {
+  list-style: none;
+}
+
 .splash_screen_heading {
   text-align: center;
   margin: 100px 0 300px 0;
@@ -83,6 +87,15 @@ body {
   position: absolute;
   top: 12px;
   right: 9px;
+}
+
+.sign_out_btn {
+  margin-right: 12px;
+}
+
+.login_btn,
+.sign_up_btn,
+.sign_out_btn {
   background: none;
   color: white;
   border: none;
@@ -107,4 +120,38 @@ body {
 .notice,
 .alert {
   font-size: 10px;
+}
+
+.categories_container {
+  justify-content: space-between;
+  margin-top: 12px;
+  padding: 20px;
+}
+
+.categories_container,
+.category-detail-container {
+  display: flex;
+}
+
+.category-detail-container {
+  flex-direction: column;
+  justify-content: space-between;
+  width: 50%;
+}
+
+.category_img {
+  width: 100px;
+  height: 100px;
+  border: 1px solid red;
+}
+
+.create_category_btn {
+  background-color: green;
+  color: white;
+  text-decoration: none;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
 }
