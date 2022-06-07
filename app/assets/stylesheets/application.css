@@ -8,6 +8,14 @@ body {
   background: rgb(241, 243, 242);
 }
 
+li {
+  list-style: none;
+}
+
+.back-btn {
+  width: 50px;
+}
+
 .splash_screen_heading {
   text-align: center;
   margin: 100px 0 300px 0;
@@ -83,6 +91,15 @@ body {
   position: absolute;
   top: 12px;
   right: 9px;
+}
+
+.sign_out_btn {
+  margin-right: 12px;
+}
+
+.login_btn,
+.sign_up_btn,
+.sign_out_btn {
   background: none;
   color: white;
   border: none;
@@ -107,4 +124,69 @@ body {
 .notice,
 .alert {
   font-size: 10px;
+}
+
+.categories_container_padding,
+.transactions-container-padding {
+  padding: 10px;
+}
+
+.categories_container,
+.transactions-container {
+  justify-content: space-between;
+  margin-top: 12px;
+  padding: 20px;
+  background: white;
+}
+
+.categories_container,
+.category-detail-container,
+.category_form,
+.transaction-form,
+.transactions-container {
+  display: flex;
+}
+
+.category-detail-container {
+  flex-direction: column;
+  justify-content: space-between;
+  width: 50%;
+}
+
+.category_img {
+  width: 100px;
+  height: 100px;
+}
+
+.create_category_btn,
+.transaction-create-btn {
+  background-color: rgb(100, 182, 37);
+  color: white;
+  text-decoration: none;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.category_form,
+.transaction-form {
+  flex-direction: column;
+  padding: 20px;
+}
+
+.category_form_field,
+.transaction_form_field {
+  height: 30px;
+  margin-bottom: 12px;
+  text-indent: 5px;
+}
+
+.category_form_btn,
+.transaction_form_btn {
+  background-color: rgb(46, 101, 182);
+  border: none;
+  color: white;
+  border-radius: 3px;
 }

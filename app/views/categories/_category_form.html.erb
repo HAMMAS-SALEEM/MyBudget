@@ -1,11 +1,9 @@
+<%= render partial: 'shared/navbar', locals: { heading: 'CREATE CATEGORIES', back_path: categories_path } %>
+
 <%= form_for :category, url: categories_path, method: :post do |form|  %>
-  <div class='form_field'>
-    <%= form.label :name %>
-    <%= form.text_field :name, class: 'category_name_field' %>
+  <div class='category_form'>
+    <%= form.text_field :name, class: 'category_form_field category_name_field', placeholder: 'Category Name' %>
+    <%= form.text_field :icon, class: 'category_form_field category_icon_field', placeholder: 'Category Icon' %>
+    <%= form.submit "Submit", class: 'category_form_field category_form_btn' %>
   </div>
-  <div class='form_field'>
-    <%= form.label :icon %>
-    <%= form.text_field :icon, class: 'category_icon_field' %>
-  </div>
-  <%= form.submit "Submit" %>
 <% end %>
