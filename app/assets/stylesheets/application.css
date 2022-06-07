@@ -126,7 +126,8 @@ li {
   font-size: 10px;
 }
 
-.categories_directory, .transactions-container-padding {
+.categories_directory,
+.transactions-container-padding {
   margin-bottom: 50px;
 }
 
