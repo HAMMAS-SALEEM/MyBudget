@@ -1,4 +1,4 @@
-# YummyRecipes
+# MyBudget
 
 "MyBudget" is a budget manager web application that allows users to keep track of their budget with different categories.
 
